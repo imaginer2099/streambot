@@ -2,11 +2,13 @@ session_name: streamlit_chat_app
 start_directory: ~/Documents/Myriad/Coding/streamlit-chat-app
 windows:
   - window_name: micro
+    start_directory: ./
     panes:
         - shell_command:
             - nix-shell
             - micro app.py
   - window_name: code-journal
+    start_directory: ./
     panes:
         - shell_command:
             - nix-shell 
