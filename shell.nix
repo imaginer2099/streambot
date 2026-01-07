@@ -9,4 +9,8 @@ mkShell {
 		pythonEnv
 		mypy
 	];
+
+	shellHook = "
+	alias cdjournal='cd cd-journal && micro'
+	";
 }
