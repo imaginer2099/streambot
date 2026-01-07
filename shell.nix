@@ -11,6 +11,6 @@ mkShell {
 	];
 
 	shellHook = "
-	alias cdjournal='cd cd-journal && micro'
+	alias cdjournal='(cd cd-journal && micro)'
 	";
 }
