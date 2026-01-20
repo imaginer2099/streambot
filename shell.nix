@@ -3,6 +3,8 @@ let
 	pythonEnv = python313.withPackages (ps: [
 		ps.streamlit
 		ps.python-dotenv
+		ps.openai
+		ps.google-genai
 	]);
 in
 mkShell {
@@ -10,8 +12,4 @@ mkShell {
 		pythonEnv
 		mypy
 	];
-
-	shellHook = "
-	alias cdjournal='(cd cd-journal && micro)'
-	";
 }

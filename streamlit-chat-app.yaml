@@ -6,13 +6,13 @@ windows:
     panes:
         - shell_command:
             - nix-shell
-            - micro app.py
+            - micro app.py shell.nix llm.py
   - window_name: code-journal
     start_directory: ./
     panes:
         - shell_command:
-            - nix-shell 
-            - cd cd-journal
+            - export target=$(pwd)
+            - cdj-script $target 
   - window_name: repl
     panes:
         - blank
